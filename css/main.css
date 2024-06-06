@@ -1,0 +1,95 @@
+/* Styles for the entire body of the HTML document */
+body {
+    font-family: Arial, sans-serif; /* Font style for text */
+    text-align: center; /* Center-align text */
+    background-color: #f0f8ff; /* Light blue background color */
+}
+
+/* Styles for the container of story-related buttons */
+.button-container {
+    display: flex; /* Display buttons in a flex layout */
+    justify-content: center; /* Center-align the buttons horizontally */
+    gap: 10px; /* Gap between buttons */
+    margin: 20px 0; /* Top and bottom margin of the button container */
+}
+
+/* Styles for all buttons */
+button {
+    padding: 15px; /* Padding inside buttons */
+    width: 60px; /* Button width */
+    height: 60px; /* Button height */
+    font-size: 14px; /* Font size of button text */
+    cursor: pointer; /* Cursor style on hover */
+    color: white; /* Text color */
+    border: none; /* Remove button border */
+    border-radius: 50%; /* Make buttons round */
+    transition: background-color 0.3s; /* Smooth transition on background color change */
+    display: inline-flex; /* Display buttons as inline-flex elements */
+    align-items: center; /* Center-align button content vertically */
+    justify-content: center; /* Center-align button content horizontally */
+}
+
+/* Styles for specific story-related buttons based on data-type attribute */
+.story-button[data-type="subject"] {
+    background-color: #FF33FF; /* Pink background color for subject button */
+}
+
+.story-button[data-type="verb"] {
+    background-color: #33FFF3; /* Light blue background color for verb button */
+}
+
+.story-button[data-type="adjective"] {
+    background-color: #33FF57; /* Green background color for adjective button */
+}
+
+.story-button[data-type="object"] {
+    background-color: #FFA533; /* Orange background color for object button */
+}
+
+.story-button[data-type="place"] {
+    background-color: #FF33A5; /* Purple background color for place button */
+}
+
+/* Hover effect for all story-related buttons */
+.story-button:hover {
+    filter: brightness(0.8); /* Reduce brightness on hover */
+}
+
+/* Styles for action-related buttons based on data-type attribute */
+.action-button[data-type="random"] {
+    background-color: #ff3333; /* Red background color for random action button */
+}
+
+.action-button[data-type="play"] {
+    background-color: #27a653; /* Green background color for play action button */
+}
+
+.action-button[data-type="reset"] {
+    background-color: #cdf02f; /* Yellow-green background color for reset action button */
+}
+
+/* Hover effect for all action-related buttons */
+.action-button:hover {
+    filter: brightness(0.8); /* Reduce brightness on hover */
+}
+
+/* Styles for the container of the toy image */
+.image-container {
+    text-align: center; /* Center-align text inside the container */
+    margin-bottom: 20px; /* Bottom margin of the container */
+}
+
+/* Styles for the toy image inside its container */
+.image-container img {
+    max-width: 100%; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio for responsive image */
+    border: 2px solid #ffff00; /* Yellow border around the image */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Styles for the output of the generated story */
+#storyOutput {
+    font-size: 18px; /* Font size of the story output text */
+    color: #333; /* Text color */
+    margin-top: 20px; /* Top margin of the story output */
+}

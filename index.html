@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> <!-- Declaring character encoding -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport settings -->
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title> <!-- Page title -->
+	<meta name="author" content="Haizan Cordoba - ID: 200578172"> <!-- Author metadata -->
+    <meta name="description" content="Assignment 1"> <!-- Description metadata -->
+	<link rel="stylesheet" href="css/normalize.css" /> <!-- Linking external CSS file -->
+	<link rel="stylesheet" href="css/main.css" /> <!-- Linking external CSS file -->
+</head>
+
+<body>
+	<h1>See 'N' Say Storymaker</h1> <!-- Heading -->
+
+	<div class="image-container">
+        <img src="img/SNSS.jpeg" alt="See 'N' Say Toy"> <!-- Image with alt text -->
+    </div>
+
+    <!-- Container for story-related buttons -->
+    <div class="button-container">
+        <button id="subjectBtn" class="story-button" data-type="subject">1</button> <!-- Button for choosing a subject -->
+        <button id="verbBtn" class="story-button" data-type="verb">2</button> <!-- Button for choosing a verb -->
+        <button id="adjectiveBtn" class="story-button" data-type="adjective">3</button> <!-- Button for choosing an adjective -->
+        <button id="objectBtn" class="story-button" data-type="object">4</button> <!-- Button for choosing an object -->
+        <button id="placeBtn" class="story-button" data-type="place">5</button> <!-- Button for choosing a place -->
+    </div>
+
+	<p id="storyOutput"></p> <!-- Placeholder for displaying generated story -->
+
+    <button id="randomStoryBtn" class="action-button" data-type="random">Surprises</button> <!-- Button for generating a random story -->
+    <button id="speakBtn" class="action-button" data-type="play">Playback</button> <!-- Button for playing back the generated story -->
+    <button id="resetBtn" class="action-button" data-type="reset">Reset</button> <!-- Button for resetting the story -->
+
+	<script src="js/app.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>
